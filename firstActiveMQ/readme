@@ -1,0 +1,10 @@
+说明
+测试ActiveMQ的发送和接收信息
+环境要求：
+需要启动activeMQ作为jms服务器
+测试步骤：
+1.先在项目根目录运行mvn clean compile编译项目
+2.运行消息消费者
+mvn exec:java -Dexec.mainClass="com.zhen.jms.activemq.Receiver"
+3.运行消息生产者发送消息
+mvn exec:java -Dexec.mainClass="com.zhen.jms.activemq.Sender"
